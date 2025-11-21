@@ -9,23 +9,5 @@ body {
 }
 
 img {
-    height: 300px;
-}
-
-.fade-in-image.loaded {
-  opacity: 1; /* Fade to fully opaque */
-}
-}
-
-img:hover {
-    filter: unset;
-}
-
-@keyframes color-rotate {
-    0%{
-        filter: hue-rotate(0deg);
-    }
-    100% {
-        filter: hue-rotate(360deg);
-    }
+    height: 370px;
 }

@@ -9,5 +9,13 @@ body {
 }
 
 img {
-    height: 370px;
+    height: 250px;
+}
+
+.header a{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-style: italic, bold;
+  font-size: 25px;
+  color: rgba(215, 5, 5, 0.49);
+  padding: 30px;
 }

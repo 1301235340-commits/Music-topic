@@ -67,5 +67,28 @@ img {
 }
 
 .album img:hover {
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 20px rgba(167, 28, 28, 0.3);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header {
+    position: relative;
+    z-index: 100;
+}
+
+.header {
+    background-color: white;
+    position: relative;
+    z-index: 10;
 }

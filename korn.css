@@ -1,0 +1,71 @@
+body 
+.container {
+    background: linear-gradient(45deg, #1a1a1a, #333);
+    color: rgb(150, 0, 0);
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.track {
+    background: #444;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 4px solid #968265;
+    transition: transform 0.3s ease;
+}
+
+.track:hover {
+    transform: translateX(10px);
+    background: #0d0c0c;
+}
+
+.track {
+    background: #444;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 4px solid #968265;
+    transition: transform 0.3s ease;
+    animation: fadeInLeft 1s ease-out;
+}
+
+.track:nth-child(even) {
+    animation: fadeInRight 1s ease-out;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.home-btn {
+    display: inline-block;
+    background: #000000;
+    color: rgb(150, 0, 0);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background 0.3s ease;
+}
+
+.home-btn:hover {
+    background: #913730;
+    transform: translateY(-2px);
+}

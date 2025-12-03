@@ -1,13 +1,13 @@
 body 
 .container {
-    background: linear-gradient(45deg, #1a1a1a, #333);
-    color: rgb(150, 0, 0);
+    background: linear-gradient(45deg, #3d3022, #333);
+    color: #c38660;
     padding: 20px;
-    min-height: 100vh;
+    min-height: 10vh;
 }
 
 .track {
-    background: #444;
+    background: #957b53;
     margin: 10px 0;
     padding: 15px;
     border-left: 4px solid #968265;
@@ -16,14 +16,14 @@ body
 
 .track:hover {
     transform: translateX(10px);
-    background: #0d0c0c;
+    background: #b48d5b;
 }
 
 .track {
     background: #444;
-    margin: 10px 0;
-    padding: 15px;
-    border-left: 4px solid #968265;
+    margin: 5px 0;
+    padding: 0px;
+    border-left: 9px solid
     transition: transform 0.3s ease;
     animation: fadeInLeft 1s ease-out;
 }
@@ -56,8 +56,8 @@ body
 
 .home-btn {
     display: inline-block;
-    background: #000000;
-    color: rgb(150, 0, 0);
+    background: #81542a;
+    color: #482109
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -66,6 +66,6 @@ body
 }
 
 .home-btn:hover {
-    background: #913730;
-    transform: translateY(-2px);
+    background: rgb(165, 151, 150);
+    transform: translateY(-10px);
 }

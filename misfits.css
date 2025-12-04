@@ -1,42 +1,36 @@
 .container {
     background: linear-gradient(70deg, #000000, #8b0000, #cc4400, #8b0000, #000000);
-    color: #ffffff;
+    color: linear-gradient (45deg) #ff0000
     padding: 20px;
     min-height: 100vh;
     font-family: 'Courier New', monospace;
 }
 
 .track {
-    background: linear-gradient(45deg, #330000, #4d1a00, #1a0000, #2d1100);
+    background: linear-gradient(45deg, #2a2a2a, #3d2f26);
     margin: 10px 0;
-    padding: 15px;
-    border-left: 9px solid #8b0000;
+    padding: 10px;
+    border-left: 9px solid #840b0b;
     transition: all 0.3s ease;
     animation: slideInLeft 0.8s ease-out;
-    box-shadow: 0 0 20px rgba(139, 0, 0, 0.6);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
 }
 
-.track:hover {
-    transform: translateX(10px) scale(1.02);
-    background: linear-gradient(45deg, #8b0000, #cc4400);
-    box-shadow: 0 0 25px rgba(204, 68, 0, 0.5);
+.track:nth-child(even) {
+    animation: slideInRight 0.8s ease-out;
+    border-left: 9px solid #840b0b;
+    box-shadow: 0 0 9px rgba(255, 255, 255, 0.3);
 }
 
-.home-btn {
-    display: inline-block;
-    background: #8b0000;
-    color: #ffffff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    transition: background 0.3s ease;
+.track-list {
+  display: flex;
+  gap: 20px;
 }
 
-.home-btn:hover {
-    background: #cc4400;
-    transform: translateY(-10px);
+.column-left, .column-right {
+  flex: 1;
 }
+
 
 @keyframes slideInLeft {
     from {
@@ -47,4 +41,38 @@
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.track:hover {
+    transform: translateX(10px) scale(1.02);
+    background: linear-gradient(100deg, #540202, #000000);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+}
+
+
+.home-btn {
+display: inline-block;
+background: rgb(86, 2, 2);
+color: #000000
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 5px;
+margin-bottom: 20px;
+transition: background 0.3s ease;
+}
+
+.home-btn:hover {
+background: rgb(25, 22, 22);
+transform: translateY(-10px);
 }

@@ -1,5 +1,5 @@
 .container {
-    background: linear-gradient(70deg, #000000, #4a1a2a, #4a3a1a, #3a3a1a, #1a3a1a, #1a2a4a, #3a1a4a, #000000);
+    background: linear-gradient(70deg, #000000, #8b0000, #cc4400, #8b0000, #000000);
     color: #ffffff;
     padding: 20px;
     min-height: 100vh;
@@ -7,13 +7,35 @@
 }
 
 .track {
-    background: linear-gradient(45deg, #2a0f1a, #2a1f0f, #1f1f0f, #0f1f0f, #0f0f2a, #1f0f2a);
+    background: linear-gradient(45deg, #330000, #4d1a00, #1a0000, #2d1100);
     margin: 10px 0;
     padding: 15px;
-    border-left: 9px solid #1a1a1a;
+    border-left: 9px solid #8b0000;
     transition: all 0.3s ease;
     animation: slideInLeft 0.8s ease-out;
-    box-shadow: 0 0 20px rgba(26, 26, 26, 0.6);
+    box-shadow: 0 0 20px rgba(139, 0, 0, 0.6);
+}
+
+.track:hover {
+    transform: translateX(10px) scale(1.02);
+    background: linear-gradient(45deg, #8b0000, #cc4400);
+    box-shadow: 0 0 25px rgba(204, 68, 0, 0.5);
+}
+
+.home-btn {
+    display: inline-block;
+    background: #8b0000;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background 0.3s ease;
+}
+
+.home-btn:hover {
+    background: #cc4400;
+    transform: translateY(-10px);
 }
 
 @keyframes slideInLeft {
@@ -25,68 +47,4 @@
         opacity: 1;
         transform: translateX(0);
     }
-}
-
-@keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(300px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.track:hover {
-transform: translateX(10px) scale(1.02);
-background: linear-gradient(45deg, #3a3a3a, #4d3b2d);
-box-shadow: 0 0 25px rgba(42, 33, 10, 0.5);
-}
-
-
-.home-btn {
-display: inline-block;
-background: rgb(119, 107, 99);
-color: #000000
-padding: 10px 20px;
-text-decoration: none;
-border-radius: 5px;
-margin-bottom: 20px;
-transition: background 0.3s ease;
-}
-
-.home-btn:hover {
-background: rgb(25, 22, 22);
-transform: translateY(-10px);
-}
-
-
-@keyframes slideInLeft {
-from {
-opacity: 0;
-transform: translateX(-300px);
-}
-to {
-opacity: 1;
-transform: translateX(0);
-}
-}
-
-
-@keyframes slideInRight {
-from {
-opacity: 0;
-transform: translateX(300px);
-}
-to {
-opacity: 1;
-transform: translateX(0);
-}
-}
-
-.track:hover {
-transform: translateX(10px) scale(1.02);
-background: linear-gradient(45deg, #3a3a3a, #4d3b2d);
-box-shadow: 0 0 25px rgba(42, 33, 10, 0.5);
 }

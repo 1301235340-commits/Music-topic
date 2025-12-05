@@ -10,7 +10,7 @@
     background: linear-gradient(45deg, #2a2a2a, #3d2f26);
     margin: 10px 0;
     padding: 15px;
-    border-left: 9px solid #e82989;
+    border-left: 9px solid #0f0007;
     border: 1px solid #333333;
     transition: all 0.3s ease;
     animation: slideInLeft 0.8s ease-out;
@@ -19,7 +19,7 @@
 
 .track:nth-child(even) {
     animation: slideInRight 0.8s ease-out;
-    border-left: 9px solid #ff6600;
+    border-left: 9px solid #873906;
     box-shadow: 0 0 15px rgba(255, 102, 0, 0.3);
 }
 
@@ -47,7 +47,7 @@
 
 .track:hover {
     transform: translateX(10px) scale(1.02);
-    background: linear-gradient(45deg, #3a3a3a, #4d3b2d);
+    background: linear-gradient(45deg, #a84444, #4d3b2d);
     box-shadow: 0 0 25px rgba(139, 105, 20, 0.5);
 }
 

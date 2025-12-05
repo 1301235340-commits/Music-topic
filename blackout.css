@@ -7,10 +7,10 @@
 }
 
 .track {
-    background: linear-gradient(45deg, #744040, #ff61df);
+    background: linear-gradient(45deg, #b5338c, #000000);
     margin: 10px 0;
     padding: 15px;
-    border-left: 9px solid #564e52;
+    border-left: 9px solid #000000;
     border: 1px solid #c32700;
     transition: all 0.3s ease;
     animation: slideInLeft 0.8s ease-out;
@@ -19,8 +19,33 @@
 
 .track:nth-child(even) {
     animation: slideInRight 0.8s ease-out;
-    border-left: 9px solid #ff38ff;
+    border-left: 9px solid #ef47ef;
     box-shadow: 0 0 15px rgba(255, 102, 0, 0.3);
+}
+
+
+.track-list {
+  display: flex;
+  gap: 20px;
+}
+
+.column-left, .column-right {
+  flex: 1;
+}
+
+.slideshow-container {
+  position: absolute;
+  animation: slideInRight 2s;
+  top: 40px;
+  right: 20px;
+  width: 800px;
+  height: 650px;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  animation: slideshow 4s alternate;
 }
 
 @keyframes slideInLeft {
@@ -55,7 +80,7 @@
 .home-btn {
 display: inline-block;
 background: rgb(245, 59, 158);
-color: #000000
+color: #000000;
 padding: 10px 20px;
 text-decoration: none;
 border-radius: 5px;

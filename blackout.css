@@ -1,5 +1,5 @@
 .container {
-    background: linear-gradient(45deg, #1a1a1a, #bd0561, #1a1a1a);
+    background: linear-gradient(80deg, #1a1a1a, #bd0561, #1a1a1a);
     color: #000000;
     padding: 20px;
     min-height: 100vh;
@@ -38,7 +38,7 @@
   animation: slideInRight 2s;
   top: 40px;
   right: 20px;
-  width: 800px;
+  width: 900px;
   height: 650px;
 }
 
@@ -47,6 +47,8 @@
   height: 100%;
   animation: slideshow 4s alternate;
 }
+
+
 
 @keyframes slideInLeft {
     from {
@@ -72,8 +74,8 @@
 
 .track:hover {
     transform: translateX(10px) scale(1.02);
-    background: linear-gradient(45deg, #3a3a3a, #4d3b2d);
-    box-shadow: 0 0 25px rgba(139, 105, 20, 0.5);
+    background: linear-gradient(45deg, #df7777, #dc8949);
+    box-shadow: 0 0 95px rgba(255, 255, 255, 0.5);
 }
 
 

@@ -55,6 +55,33 @@
     box-shadow: 0 0 15px rgba(160, 82, 45, 0.2);
 }
 
+
+.track-list {
+  display: flex;
+  gap: 20px;
+}
+
+.column-left, .column-right {
+  flex: 1;
+}
+
+
+.slideshow-container {
+  position: absolute;
+  animation: slideInRight 2s;
+  top: 40px;
+  right: 20px;
+  width: 900px;
+  height: 530px;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  animation: slideshow 4s alternate;
+}
+
+
 @keyframes slideInLeft {
     from {
         opacity: 0;

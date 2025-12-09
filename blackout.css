@@ -1,6 +1,6 @@
 .container {
     background: linear-gradient(80deg, #1a1a1a, #bd0561, #1a1a1a);
-    color: #000000;
+    color: #651515;
     padding: 20px;
     min-height: 100vh;
     font-family: 'Courier New', monospace;
@@ -36,11 +36,12 @@
 .slideshow-container {
   position: absolute;
   animation: slideInRight 2s;
-  top: 40px;
+  top: 170px;
   right: 20px;
   width: 900px;
-  height: 650px;
+  height: 530px;
 }
+
 
 .slide {
   width: 100%;

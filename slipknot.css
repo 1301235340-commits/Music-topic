@@ -1,26 +1,26 @@
 .container {
-    background: linear-gradient(80deg, #1a1a1a, #bd0561, #1a1a1a);
-    color: #ca7300;
+    background: linear-gradient(80deg, #1a1a1a, #580000, #1a1a1a);
+    color: #850f0f;
     padding: 20px;
     min-height: 100vh;
     font-family: 'Courier New', monospace;
 }
 
 .track {
-    background: linear-gradient(45deg, #b5338c, #000000);
+    background: linear-gradient(45deg, #000000, hsl(0, 100%, 34%));
     margin: 10px 0;
     padding: 15px;
     border-left: 9px solid #000000;
-    border: 1px solid #c32700;
+    border: 1px solid #521000;
     transition: all 0.3s ease;
     animation: slideInLeft 0.8s ease-out;
-    box-shadow: 0 0 15px rgba(255, 254, 250, 0.2);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
 }
 
 .track:nth-child(even) {
     animation: slideInRight 0.8s ease-out;
-    border-left: 9px solid #ef47ef;
-    box-shadow: 0 0 15px rgba(255, 102, 0, 0.3);
+    border-left: 9px solid #000000;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
 }
 
 
@@ -75,14 +75,14 @@
 
 .track:hover {
     transform: translateX(10px) scale(1.02);
-    background: linear-gradient(45deg, #df7777, #dc8949);
-    box-shadow: 0 0 95px rgba(255, 255, 255, 0.5);
+    background: linear-gradient(45deg, #720000, #000000);
+    box-shadow: 0 0 95px rgba(0, 0, 0, 0.5);
 }
 
 
 .home-btn {
 display: inline-block;
-background: rgb(245, 59, 158);
+background: rgb(86, 8, 8);
 color: #000000;
 padding: 10px 20px;
 text-decoration: none;

@@ -23,6 +23,34 @@
     box-shadow: 0 0 15px rgba(255, 102, 0, 0.3);
 }
 
+
+.track-list {
+  display: flex;
+  gap: 20px;
+}
+
+.column-left, .column-right {
+  flex: 1;
+}
+
+.slideshow-container {
+  position: absolute;
+  animation: slideInRight 2s;
+  top: 160px;
+  right: 20px;
+  width: 900px;
+  height: 530px;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  animation: slideshow 4s alternate;
+}
+
+
+
+
 @keyframes slideInLeft {
     from {
         opacity: 0;
@@ -55,7 +83,7 @@
 .home-btn {
 display: inline-block;
 background: rgb(46, 31, 54);
-color: #000000
+color: #000000;
 padding: 10px 20px;
 text-decoration: none;
 border-radius: 5px;

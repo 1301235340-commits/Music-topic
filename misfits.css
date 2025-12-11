@@ -1,5 +1,5 @@
 .container {
-    background: linear-gradient(70deg, #000000, #8b0000, #cc4400, #8b0000, #000000);
+    background: linear-gradient(70deg, #000000, #af2020, #cc4400, #af2020, #000000);
     color: linear-gradient (45deg) #ff0000;
     padding: 20px;
     min-height: 100vh;
@@ -13,13 +13,13 @@
     border-left: 9px solid #840b0b;
     transition: all 0.3s ease;
     animation: slideInLeft 0.8s ease-out;
-    box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+    box-shadow: 0 0 15px rgb(255, 157, 0);
 }
 
 .track:nth-child(even) {
     animation: slideInRight 0.8s ease-out;
     border-left: 9px solid #840b0b;
-    box-shadow: 0 0 9px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 9px rgba(178, 51, 51, 0.3);
 }
 
 .track-list {

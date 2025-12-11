@@ -43,7 +43,7 @@
 .slideshow-container {
   position: absolute;
   animation: slideInRight 2s;
-  top: 40px;
+  top: 160px;
   right: 20px;
   width: 900px;
   height: 530px;
